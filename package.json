@@ -1,0 +1,12 @@
+{
+  "name": "salao-luzes",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {},
+  "author": "Rodrigo Addor <me@rodr.dev>",
+  "license": "ISC",
+  "dependencies": {
+    "tuyapi": "^7.5.2"
+  }
+}
