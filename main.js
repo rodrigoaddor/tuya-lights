@@ -23,7 +23,7 @@ const value = !status;
 await tuya.set({
   multiple: true,
   data: config.targets.reduce((obj, target) => {
-    obj[target] = true;
+    obj[target] = value;
     return obj;
   }, {}),
 });
