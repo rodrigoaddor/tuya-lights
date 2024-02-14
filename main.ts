@@ -1,14 +1,13 @@
-import TuyAPI from "tuyapi";
+const TuyaDevice = require("tuyapi/index")
 import config from "./config.json" with { type: "json" };
 
-const tuya = new TuyAPI({
+const tuya = new TuyaDevice({
   id: config.id,
   ip: config.ip,
   key: config.key,
   version: config.version,
 });
 
-await tuya.find();
 await tuya.connect();
 
 const properties = await tuya.get({
@@ -27,12 +26,5 @@ await tuya.set({
     return obj;
   }, {}),
 });
-
-// for (const target of config.targets) {
-//     await tuya.set({
-//         set: value,
-//         dps: target
-//     })
-// }
 
 tuya.disconnect();
