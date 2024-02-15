@@ -1,13 +1,14 @@
 {
   "name": "salao-luzes",
   "version": "1.0.0",
-  "main": "main.ts",
+  "main": "main.js",
   "type": "module",
   "scripts": {},
   "author": "Rodrigo Addor <me@rodr.dev>",
   "license": "ISC",
   "dependencies": {
-    "tuyapi": "^7.5.2"
+    "tuyapi": "^7.5.2",
+    "uiohook-napi": "^1.5.3"
   },
   "devDependencies": {
     "@types/bun": "latest"
